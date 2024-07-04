@@ -102,13 +102,13 @@ if __name__=="__main__":
           
        elif 'play music' in query:
             n=0
-            music_dir = 'C:\\nikhilmusic'
+            music_dir = 'filr_directory path'
             songs = os.listdir(music_dir)
             print(songs)    
             os.startfile(os.path.join(music_dir, songs[n]))
             for i in songs:
                if 'next song' in query:
-                  music_dir = 'C:\\nikhilmusic'
+                  music_dir = 'file_directory path'
                   songs = os.listdir(music_dir)
                   print(songs)    
                   os.startfile(os.path.join(music_dir, songs[n+1]))
